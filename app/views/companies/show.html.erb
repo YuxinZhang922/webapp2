@@ -8,8 +8,11 @@
 <h3>Contacts</h3>
 
 <ul>
-  <li>Michael Scott</li>
-  <li>Dwight Schrute</li>
+  <% contacts = Contact.where({"company_id" => @company["id"]})%>
+  <%for contact in contacts%>
+    <li><%= contact["first_name"]%></li>
+    <li><%= contact["last_name"]%></li>
+    <%end%>
 </ul>
 
 <p>
