@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # resources "cards"
   get("/cards", :controller => "cards", :action => "index")
   # resources "bitcoins"
-  get("bitcoins", :controller => "bitcoins", :action => "index")
+  get("/bitcoins", :controller => "bitcoins", :action => "index")
   # resources "companies"
   get("/companies", :controller => "companies", :action => "index")
   # resources "contacts"
